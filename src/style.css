@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --text-gray: #343A40;
+    --text-gray-p: #495057;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #D8DFE8;
+  height: 100vh;
+}
+
+/* Add more reset styles as needed */
+header {
+  padding: 2rem;
+  text-align: start;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+}
+
+.content .content_form{
+    height: 75vh;
+    width: 680px;
+}
+
+.content .content_form textarea{
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+
+    background-color: #D8DFE8;
+}
+
+textarea{
+    font-size: 32px;
+    color: #0A3871;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+  }
+
+.content .content_form p{
+    color: var(--text-gray);
+    font-size: 12px;
+    padding: 16px 0;
+}
+
+.content .content_form .botoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.content .content_form .botoes button{
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 20px 110px;
+    border-radius: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#criptografar{
+    border: none;
+    background-color: #0A3871;
+}
+
+#criptografar:hover{
+    background-color: #0056b3;
+}
+
+#descriptografar{
+    border: solid 1px #0A3871;
+    color: #0A3871;
+    background-color: #D8DFE8;
+}
+
+#descriptografar:hover{
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.contentResultado{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    align-items: center;
+
+    height: 75vh;
+    width: 400px;
+    text-align: center;
+}
+
+.contentResultado .mensagem_resultado{
+    color: var(--text-gray);
+    padding: 32px 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contentResultado h3{
+    font-size: 24px;
+}
+
+.contentResultado p{
+    font-size: 16px;
+    color: var(--text-gray-p);
+}
+
